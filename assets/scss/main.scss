@@ -1,6 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Special+Elite&display=swap');
-@use 'helpers/placeholders';
-@use 'helpers/variables';
+@import 'helpers/placeholders';
+@import 'helpers/var';
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style-type: none;
+outline: none;
+border: none;
+}
+
+body {
+    background-color: $bg-color;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+h1{
+    @extend %font-header;
+    font-size: 4rem;
+    text-align: center;
+    color: $section-color;
+}
+
+h2 {
+    @extend %font-header;
+    font-size: 2rem;
+    text-align: center;
+    color: $content-color;
+    margin: 1rem 0;
+}
+
+p, a {
+    @extend %font-content;
+    color: $content-color;
+    font-size: 1.8rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    svg {
+    width: 50%;
+    margin: 2rem;
+    }
+}
+
+nav{
+    ul {
+        background-color: $highlight-color;
+        display: flex;
+        justify-content: space-evenly;
+        }
+    }
+
+section {
+    margin: 2rem 1rem;
+    padding: 1rem;
+    background-color: $section-color;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+#hero-section {
+    position: relative;
+
+    button {
+        position: absolute;
+        background-color: transparent;
+        color: $highlight-color;
+    }
+    #left{
+        top: 40%;
+        left: 0;
+    }
+    #right {
+        top: 40%;
+        right: 0;
+    }
+}
+
+footer {
+    background-color: $highlight-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #contact {
+
+        a{
+            display: block;
+            text-align: center;
+        }
+
+        #newsletter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+    
+            input {
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+    
+            button {
+                padding: 1rem;
+                border: 1px solid $content-color;
+                background-color: transparent;
+                color: $content-color;
+                margin-bottom: 1rem;
+            }
+        }
+
+    } // end contact
+
+    #some {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-bottom: 2rem;
+
+        img{
+            width: 90%;
+        }
+    }
+
+    
+
+
+}
+
+
+
+
 
 
 
