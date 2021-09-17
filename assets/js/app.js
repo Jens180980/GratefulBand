@@ -80,9 +80,8 @@ function validate(){
         // virker ikke?
         else {
             checkMail(input.value)
-            if(!checkMail) {
-                
-                setError(input)
+            if(!checkMail) {   
+            setError(input)
             status = false
             return false
             }
