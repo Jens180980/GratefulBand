@@ -7,6 +7,19 @@ h1, h2 {
   font-family: 'Special Elite', cursive;
 }
 
+@keyframes pulsate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+
+h1 {
+  padding: 2rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -50,6 +63,7 @@ header {
 header svg {
   width: 50%;
   margin: 2rem;
+  animation: pulsate 2s infinite;
 }
 
 nav ul {
@@ -130,4 +144,19 @@ footer #some {
 
 footer #some img {
   width: 90%;
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 10rem;
+  }
+  nav li a {
+    font-size: 4rem;
+  }
+  nav li a:hover {
+    color: #050505;
+  }
+  #newvideo h2 {
+    font-size: 3rem;
+  }
 }
