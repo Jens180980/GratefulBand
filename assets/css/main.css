@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Special+Elite&display=swap");
+p, a {
+  font-family: 'Amatic SC', cursive;
+}
+
+h1, h2 {
+  font-family: 'Special Elite', cursive;
+}
+
+@keyframes pulsate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+
+h1 {
+  padding: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  border: none;
+}
+
+body {
+  background-color: #575b5e;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: #050505;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #fefffe;
+  margin: 1rem 0;
+}
+
+p, a {
+  color: #fefffe;
+  font-size: 1.8rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header svg {
+  width: 50%;
+  margin: 2rem;
+  animation: pulsate 2s infinite;
+}
+
+nav ul {
+  background-color: #7b0000;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+section {
+  margin: 2rem 1rem;
+  padding: 1rem;
+  background-color: #050505;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 90%;
+}
+
+#hero-section {
+  position: relative;
+}
+
+#hero-section button {
+  position: absolute;
+  background-color: transparent;
+  color: #7b0000;
+}
+
+#hero-section #left {
+  top: 40%;
+  left: 0;
+}
+
+#hero-section #right {
+  top: 40%;
+  right: 0;
+}
+
+footer {
+  background-color: #7b0000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer #contact a {
+  display: block;
+  text-align: center;
+}
+
+footer #contact #newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+footer #contact #newsletter input {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer #contact #newsletter button {
+  padding: 1rem;
+  border: 1px solid #fefffe;
+  background-color: transparent;
+  color: #fefffe;
+  margin-bottom: 1rem;
+}
+
+footer #some {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 2rem;
+}
+
+footer #some img {
+  width: 90%;
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 10rem;
+  }
+  nav li a {
+    font-size: 4rem;
+  }
+  nav li a:hover {
+    color: #050505;
+  }
+  #newvideo h2 {
+    font-size: 3rem;
+  }
+}

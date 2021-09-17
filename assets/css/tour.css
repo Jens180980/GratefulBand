@@ -1,0 +1,32 @@
+body {
+  background-image: url(../img/pexels-jc-siller-8634867.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header h1 {
+  color: white;
+}
+
+header h2 {
+  font-size: 6rem;
+}
+
+#tour {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 14rem;
+}
+
+#tour h3 {
+  color: white;
+}
+
+#tour img {
+  grid-column: 1 / -1;
+  grid-row: 3 /4;
+  padding: 2rem;
+}
