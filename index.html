@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/main.css">
     <script src="./assets/js/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/ab6c1254a5.js" crossorigin="anonymous"></script>
     <title>Grateful Band</title>
 </head>
 <body>
@@ -21,11 +22,11 @@
         </nav>
     </header>
 
-    <section id="hero">
+    <section id="hero-section">
         <div class="slider-wrap">
-            <img src="./assets/img/pexels-brett-sayles-1309240.jpg" alt="Brett Sayles">
-            <img src="./assets/img/pexels-jc-siller-8634867.jpg" alt="JS Siller">
-            <img src="./assets/img/pexels-josh-sorenson-995301.jpg" alt="Josh Sorenson">
+            <button id="left" class="fas fa-chevron-left fa-7x"></button>
+            <img src="" alt="" id="hero-pic">
+            <button id="right" class="fas fa-chevron-right fa-7x"></button>
         </div>
     </section>
 
@@ -39,6 +40,12 @@
             <h3>Contact information</h3>
             <a href="tel: +50588202124">Phone: (505) 88202124</a>
             <a href="mailto: manager@gratefulband.com">Email: manager@gratefulband.com</a>
+            <h3>Wan't the latest news from us?</h3>
+            <form id="newsletter">
+                <input type="email" id="email" required placeholder="Type your email">
+                <button id="submit" onclick="validate(this.form)">Hell yeah!</button>
+                <p id="message"></p>
+            </form>
         </div>
         <div id="some"></div>
          <img src="./assets/img/287739_facebook_icon.svg" alt="Facebook logo">
@@ -48,3 +55,5 @@
     </footer>
 </body>
 </html>
+
+
